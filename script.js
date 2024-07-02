@@ -140,8 +140,8 @@ function shareOnWhatsApp() {
     rows.forEach(row => {
         // Itera sobre cada fila
 
-        const product = row.querySelector('td:first-child').textContent.toUpperCase();
-        // Obtiene el texto del primer td de la fila (el nombre del producto) y lo convierte a mayúsculas
+        const product = row.querySelector('td:first-child').textContent;
+        // Obtiene el texto del primer td de la fila (el nombre del producto)
 
         const checkedField = row.querySelector('input[type="radio"]:checked');
         // Selecciona el input de tipo radio seleccionado en la fila
@@ -152,8 +152,8 @@ function shareOnWhatsApp() {
         if (checkedField) {
             // Si hay un input de tipo radio seleccionado
 
-            value = checkedField.closest('table').querySelector(`th:nth-child(${checkedField.parentElement.cellIndex + 1})`).textContent.toUpperCase();
-            // Obtiene el texto del encabezado de la columna correspondiente al input seleccionado y lo convierte a mayúsculas
+            value = checkedField.closest('table').querySelector(`th:nth-child(${checkedField.parentElement.cellIndex + 1})`).textContent;
+            // Obtiene el texto del encabezado de la columna correspondiente al input seleccionado
         }
 
         textContent += `${product}: ${value}\n`;
