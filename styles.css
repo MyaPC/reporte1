@@ -1,0 +1,180 @@
+body {
+    font-family: Arial, Helvetica, sans-serif; /* Define la familia de fuentes para el documento */
+    font-size: 12px; /* Define el tamaño de fuente para el documento */
+    margin: 5px; /* Define el margen para el documento */
+}
+
+/* CONTENEDOR DE LA PÁGINA */
+#container {
+    max-width: 800px; /* Define el ancho máximo del contenedor */
+    margin: 0px auto; /* Centra el contenedor horizontalmente */
+    padding: 5px; /* Define el relleno dentro del contenedor */
+}
+
+.fecha {
+    width: 100%; /* Define el ancho del elemento */
+    text-align: right; /* Alinea el texto a la derecha */
+}
+
+h2 {
+    width: 100%; /* Define el ancho del elemento */
+    text-align: center; /* Centra el texto */
+    font-size: 14px; /* Define el tamaño de fuente */
+    margin-bottom: 15px; /* Define el margen inferior */
+    color: #786600; /* Define el color del texto */
+}
+
+/* CONTENEDOR DE LOS DATOS APARTAMENTO, OPERARIO, NIVEL DE SUCIEDAD Y ESTRELLAS */
+.datos {
+    max-width: 100%; /* Define el ancho máximo del contenedor */
+    text-align: center; /* Centra el texto */
+}
+
+.datos label {
+    display: block; /* Define el elemento como un bloque */
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+#apartamento {
+    width: 100%; /* Define el ancho del elemento */
+    border: 1px solid #dcbb0060; /* Define el borde del elemento */
+    margin-top: 10px; /* Define el margen superior */
+    margin-bottom: 10px; /* Define el margen inferior */
+    padding: 10px; /* Define el relleno dentro del elemento */
+    box-sizing: border-box; /* Incluye el relleno y el borde en el tamaño total del elemento */
+}
+
+#operario {
+    width: 100%; /* Define el ancho del elemento */
+    border: 1px solid #dcbb0060; /* Define el borde del elemento */
+    margin-top: 10px; /* Define el margen superior */
+    margin-bottom: 10px; /* Define el margen inferior */
+    padding: 10px; /* Define el relleno dentro del elemento */
+    text-transform: uppercase; /* Transforma el texto a mayúsculas */
+    box-sizing: border-box; /* Incluye el relleno y el borde en el tamaño total del elemento */
+}
+
+.form-group-1>div {
+    width: 100%; /* Define el ancho del elemento */
+    border: 1px solid #dcbb0060; /* Define el borde del elemento */
+    margin-top: 10px; /* Define el margen superior */
+    padding-left: 10px; /* Define el relleno izquierdo del elemento */
+    box-sizing: border-box; /* Incluye el relleno y el borde en el tamaño total del elemento */
+}
+
+/* CONTENEDOR DE LA TABLA */
+#checklistForm {
+    width: 100%; /* Define el ancho del elemento */
+    text-align: center; /* Centra el texto */
+}
+
+table {
+    width: 100%; /* Define el ancho de la tabla */
+    border-collapse: collapse; /* Colapsa los bordes de la tabla */
+    margin: 0px auto; /* Centra la tabla horizontalmente */
+}
+
+table,
+th,
+td {
+    border: 1px solid #dcbb0060; /* Define el borde de la tabla y las celdas */
+}
+
+th {
+    background-color: #dcbb0060; /* Define el color de fondo del encabezado */
+    text-align: center; /* Centra el texto del encabezado */
+    padding: 5px; /* Define el relleno dentro del encabezado */
+}
+
+td {
+    background-color: #fff; /* Define el color de fondo de las celdas */
+    text-align: center; /* Centra el texto de las celdas */
+}
+
+.xx {
+    width: 58%; /* Define el ancho del elemento */
+}
+
+.xxx {
+    width: 6%; /* Define el ancho del elemento */
+}
+
+.columna-1 {
+    font-weight: bold; /* Define el peso de la fuente en negrita */
+}
+
+.columna-2 {
+    text-align: left; /* Alinea el texto a la izquierda */
+    padding-left: 5px; /* Define el relleno izquierdo dentro del elemento */
+}
+
+.col-si {
+    background-color: rgb(237, 243, 254); /* Define el color de fondo */
+}
+
+/* LABEL DE OBSERVACIONES */
+.observaciones {
+    width: 100%; /* Define el ancho del elemento */
+    padding: 10px; /* Define el relleno dentro del elemento */
+    margin-top: 10px; /* Define el margen superior */
+    text-align: left; /* Alinea el texto a la izquierda */
+    color: rgb(255, 149, 0); /* Define el color del texto */
+    box-sizing: border-box; /* Incluye el relleno y el borde en el tamaño total del elemento */
+}
+
+/* ÁREA DE INGRESO DE DATOS DE OBSERVACIONES */
+.form-group-1>div input,
+textarea {
+    width: 100%; /* Define el ancho del elemento */
+    border: 1px solid #dcbb0060; /* Define el borde del elemento */
+    text-transform: uppercase; /* Transforma el texto a mayúsculas */
+    box-sizing: border-box; /* Incluye el relleno y el borde en el tamaño total del elemento */
+}
+
+/* CONTENEDOR BOTÓN */
+.button {
+    text-align: center; /* Centra el texto */
+    margin: 10px 0; /* Define el margen superior e inferior */
+}
+
+/* BOTÓN */
+button {
+    padding: 10px 20px; /* Define el relleno dentro del botón */
+    background-color: #4CAF50; /* Define el color de fondo del botón */
+    color: white; /* Define el color del texto */
+    border: none; /* Elimina el borde */
+    border-radius: 5px; /* Define el radio del borde */
+    cursor: pointer; /* Cambia el cursor a una mano cuando se pasa por encima */
+}
+
+button:hover {
+    background-color: #45a049; /* Define el color de fondo cuando el cursor está sobre el botón */
+}
+
+button:active {
+    background-color: #3e8e41; /* Define el color de fondo cuando el botón está activo */
+}
+
+/* ESTRELLAS */
+.estrellas-rating {
+    display: flex; /* Define un contenedor flexible */
+    align-items: center; /* Alinea los elementos en el centro verticalmente */
+    font-size: 2em; /* Define el tamaño de fuente */
+    unicode-bidi: bidi-override; /* Utiliza el método bidi-override para el texto */
+    margin-bottom: 10px; /* Define el margen inferior */
+    justify-content: left; /* Alinea los elementos a la izquierda */
+}
+
+.estrellas-rating .rating {
+    display: flex; /* Define un contenedor flexible para los elementos internos */
+}
+
+.estrellas-rating input {
+    display: none; /* Oculta los inputs */
+}
+
+.estrellas-rating label {
+    color: #ccc; /* Define el color del texto */
+    cursor: pointer; /* Cambia el cursor a una mano cuando se pasa por encima */
+    transition: all 0.3s; /* Define una transición suave para todos los cambios */
+}

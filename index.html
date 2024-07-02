@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image" href="mpc.jpg" />
+    <link rel="stylesheet" href="styles.css">
+    <title>REPORTE</title>
+</head>
+
+<body>
+    <div id="container">
+        <div class="fecha" id="dateTime"></div>
+        <center><img src="mpc.jpg" alt="centered image" height="64" width="100"></center>
+        <h2>REPORTE DE PRODUCTOS Y MATERIALES DE LIMPIEZA</h2>
+        <div class="datos">
+            <div class="form-group-1">
+                <label for="apartamento">Apartamento:</label>
+                <select id="apartamento" name="apartamento">
+                    <option value=""></option>
+                    <option value="ALBORS">ALBORS</option>
+                    <option value="ALMIRANTE MARINO">ALMIRANTE MARINO</option>
+                    <option value="ANTONIO SUAREZ">ANTONIO SUAREZ</option>
+                    <option value="ARQUEBISBE - HENAR">ARQUEBISBE - HENAR</option>
+                    <option value="AUSIAS MARCH 1">AUSIAS MARCH 1</option>
+                    <option value="AUSIAS MARCH 2 ">AUSIAS MARCH 2 </option>
+                    <option value="AVENIDA DEL OESTE - PEPA">AVENIDA DEL OESTE - PEPA</option>
+                    <option value="AVENIDA FRANCIA ">AVENIDA FRANCIA </option>
+                    <option value="BALACIART">BALACIART</option>
+                    <option value="BALEARES">BALEARES</option>
+                    <option value="BARRACA">BARRACA</option>
+                    <option value="BOLESRIA 2">BOLESRIA 2</option>
+                    <option value="BOLSERIA 1">BOLSERIA 1</option>
+                    <option value="BOLSERIA 3">BOLSERIA 3</option>
+                    <option value="BORRULL">BORRULL</option>
+                    <option value="CABANYAL TANA">CABANYAL TANA</option>
+                    <option value="CADIZ - CARMEN">CADIZ - CARMEN</option>
+                    <option value="CALLE BAJA PASQUALIS">CALLE BAJA PASQUALIS</option>
+                    <option value="CALLE DEL MAR">CALLE DEL MAR</option>
+                    <option value="CAMPANAR">CAMPANAR</option>
+                    <option value="CARMELITAS">CARMELITAS</option>
+                    <option value="CAVITE">CAVITE</option>
+                    <option value="CENTELLES">CENTELLES</option>
+                    <option value="CERRAJEROS">CERRAJEROS</option>
+                    <option value="CERVANTES">CERVANTES</option>
+                    <option value="CHILE">CHILE</option>
+                    <option value="CIRILO AMOROS">CIRILO AMOROS</option>
+                    <option value="COLOMA IGOR">COLOMA IGOR</option>
+                    <option value="CONVENTO">CONVENTO</option>
+                    <option value="COOL LOFTS APT 1">COOL LOFTS APT 1</option>
+                    <option value="COOL LOFTS APT 2">COOL LOFTS APT 2</option>
+                    <option value="COOL LOFTS APT 3">COOL LOFTS APT 3</option>
+                    <option value="CORTES VALENCIANAS">CORTES VALENCIANAS</option>
+                    <option value="CUBA 40 - DANIEL">CUBA 40 - DANIEL</option>
+                    <option value="CUBA 2 RIKA">CUBA 2 RIKA</option>
+                    <option value="DENIA">DENIA</option>
+                    <option value="DR-LLUCH-ANA">DR-LLUCH-ANA</option>
+                    <option value="DUQUE DE GAETA 12 D">DUQUE DE GAETA 12 D</option>
+                    <option value="DUQUE DE GAETA 12 I">DUQUE DE GAETA 12 I</option>
+                    <option value="DUQUE DE GAETA 14 D">DUQUE DE GAETA 14 D</option>
+                    <option value="DUQUE DE GAETA 14 I">DUQUE DE GAETA 14 I</option>
+                    <option value="EDUARDO BOSCÁ">EDUARDO BOSCÁ</option>
+                    <option value="EN GIL THEA">EN GIL THEA</option>
+                    <option value="ESCALANTE 1">ESCALANTE 1</option>
+                    <option value="ESCALANTE 2">ESCALANTE 2</option>
+                    <option value="ESCOLANO 2 - PATXI">ESCOLANO 2 - PATXI</option>
+                    <option value="ESCOLANO 3 - NEREA">ESCOLANO 3 - NEREA</option>
+                    <option value="ESCOLANO - 1 - PATXI">ESCOLANO - 1 - PATXI</option>
+                    <option value="FERNANDO EL CATÓLICO-SUSI">FERNANDO EL CATÓLICO-SUSI</option>
+                    <option value="FINESTRAT 1 - FRANCISCO">FINESTRAT 1 - FRANCISCO</option>
+                    <option value="FINESTRAT 2 - FRANCISCO">FINESTRAT 2 - FRANCISCO</option>
+                    <option value="GERMANIAS">GERMANIAS</option>
+                    <option value="GRAN VÍA">GRAN VÍA</option>
+                    <option value="GRANADA 7 IZQUIERDA ">GRANADA 7 IZQUIERDA </option>
+                    <option value="GRANADA 3">GRANADA 3</option>
+                    <option value="GRANADA 7 DERECHA">GRANADA 7 DERECHA</option>
+                    <option value="GRANADA 9">GRANADA 9</option>
+                    <option value="ITURBI">ITURBI</option>
+                    <option value="JOSE BENLLIURE - APT A BRISA">JOSE BENLLIURE - APT A BRISA</option>
+                    <option value="JOSE BENLLIURE - APT B VERD">JOSE BENLLIURE - APT B VERD</option>
+                    <option value="JOSE BENLLIURE - APT C LLEVANT">JOSE BENLLIURE - APT C LLEVANT</option>
+                    <option value="JOSE BENLLIURE - APT D ARENA">JOSE BENLLIURE - APT D ARENA</option>
+                    <option value="JOSE BENLLIURE - APT E AIGUA">JOSE BENLLIURE - APT E AIGUA</option>
+                    <option value="JOSE BENLLIURE - APT F CALMA">JOSE BENLLIURE - APT F CALMA</option>
+                    <option value="JOSE BENLLIURE 2 KITTY">JOSE BENLLIURE 2 KITTY</option>
+                    <option value="JULIO ANTONIO">JULIO ANTONIO</option>
+                    <option value="JUSTO VILAR">JUSTO VILAR</option>
+                    <option value="LA LONJA">LA LONJA</option>
+                    <option value="LA PALMA-LUIS">LA PALMA-LUIS</option>
+                    <option value="LA PAZ JOSEVI">LA PAZ JOSEVI</option>
+                    <option value="LITERATO AZORÍN 1 - 43 - CAROLINA">LITERATO AZORÍN 1 - 43 - CAROLINA</option>
+                    <option value="LITERATO AZORÍN 2 - 33 - CAROLINA">LITERATO AZORÍN 2 - 33 - CAROLINA</option>
+                    <option value="LOFT 2 BOLSERIA">LOFT 2 BOLSERIA</option>
+                    <option value="LOFT 3 BOLSERIA">LOFT 3 BOLSERIA</option>
+                    <option value="MAESTRO AGUILAR">MAESTRO AGUILAR</option>
+                    <option value="MAESTRO CLAVÉ">MAESTRO CLAVÉ</option>
+                    <option value="MAESTRO GOZALBO">MAESTRO GOZALBO</option>
+                    <option value="MALLORQUINS">MALLORQUINS</option>
+                    <option value="MARE NOSTRUM PTA. 1">MARE NOSTRUM PTA. 1</option>
+                    <option value="MARE NOSTRUM PTA. 9">MARE NOSTRUM PTA. 9</option>
+                    <option value="MARQUES DE CARO">MARQUES DE CARO</option>
+                    <option value="MATÍAS PERELLÓ 40 TASHA">MATÍAS PERELLÓ 40 TASHA</option>
+                    <option value="MENDEZ NUÑEZ FRANCIS">MENDEZ NUÑEZ FRANCIS</option>
+                    <option value="MICER MASCÒ PTA. 30 BORJA">MICER MASCÒ PTA. 30 BORJA</option>
+                    <option value="MIRAMAR">MIRAMAR</option>
+                    <option value="MONTANT - SARA">MONTANT - SARA</option>
+                    <option value="MONTEOLIVETE A - FRAY PEDRO">MONTEOLIVETE A - FRAY PEDRO</option>
+                    <option value="MONTEOLIVETE B - ORIENTE">MONTEOLIVETE B - ORIENTE</option>
+                    <option value="MOSSEN SORELL 1">MOSSEN SORELL 1</option>
+                    <option value="MOSSEN SORELL 2">MOSSEN SORELL 2</option>
+                    <option value="MURILLO">MURILLO</option>
+                    <option value="ORIHUELA">ORIHUELA</option>
+                    <option value="PADILLA NURIA">PADILLA NURIA</option>
+                    <option value="PADRE LUIS NAVARRO">PADRE LUIS NAVARRO</option>
+                    <option value="PALLETER - LORETO">PALLETER - LORETO</option>
+                    <option value="PALOMAR ">PALOMAR </option>
+                    <option value="PASEO DE RUZAFA">PASEO DE RUZAFA</option>
+                    <option value="PATACONA 36">PATACONA 36</option>
+                    <option value="PATACONA BLUE">PATACONA BLUE</option>
+                    <option value="PATACONA PTA. 13 SOLVEIG">PATACONA PTA. 13 SOLVEIG</option>
+                    <option value="PAVESOS ">PAVESOS </option>
+                    <option value="PEDRO DE VALENCIA">PEDRO DE VALENCIA</option>
+                    <option value="PEDRO - III - GRANDE">PEDRO - III - GRANDE</option>
+                    <option value="PERE ALEIXANDRE 1">PERE ALEIXANDRE 1</option>
+                    <option value="PERE ALEIXANDRE 2">PERE ALEIXANDRE 2</option>
+                    <option value="PEREZ GALDOS">PEREZ GALDOS</option>
+                    <option value="PINTOR GISBERT 1 - SUSANA">PINTOR GISBERT 1 - SUSANA</option>
+                    <option value="PINTOR GISBERT 2 - LUIS">PINTOR GISBERT 2 - LUIS</option>
+                    <option value="PINTOR SALVADOR ABRIL - CAROLYN">PINTOR SALVADOR ABRIL - CAROLYN</option>
+                    <option value="PROGRESO 1 - XIMO">PROGRESO 1 - XIMO</option>
+                    <option value="PROGRESO 2 - JUAN MIGUEL">PROGRESO 2 - JUAN MIGUEL</option>
+                    <option value="PROGRESO 3 - BORJA">PROGRESO 3 - BORJA</option>
+                    <option value="PUERTO RICO - EVA">PUERTO RICO - EVA</option>
+                    <option value="PUERTO RICO 48 HARALD">PUERTO RICO 48 HARALD</option>
+                    <option value="PUERTO RICO 50">PUERTO RICO 50</option>
+                    <option value="QUART">QUART</option>
+                    <option value="REINA DOÑA Mª HARALD">REINA DOÑA Mª HARALD</option>
+                    <option value="REY DON JAIME">REY DON JAIME</option>
+                    <option value="RIPALDA">RIPALDA</option>
+                    <option value="ROGER DE FLOR">ROGER DE FLOR</option>
+                    <option value="ROJAS CLEMENTE-TANA">ROJAS CLEMENTE-TANA</option>
+                    <option value="ROSARIO - DAVID">ROSARIO - DAVID</option>
+                    <option value="SAN JACINTO 1">SAN JACINTO 1</option>
+                    <option value="SAN JACINTO 2">SAN JACINTO 2</option>
+                    <option value="SAN JAUME 1 - JESSE">SAN JAUME 1 - JESSE</option>
+                    <option value="SAN JAUME 2 - RUUD">SAN JAUME 2 - RUUD</option>
+                    <option value="SAN VALERO MAR">SAN VALERO MAR</option>
+                    <option value="SEGORBE - SUSANA">SEGORBE - SUSANA</option>
+                    <option value="SERRANO 13 - JUAN">SERRANO 13 - JUAN</option>
+                    <option value="SERRANO - 5 - PTA - 5 AMPARO">SERRANO - 5 - PTA - 5 AMPARO</option>
+                    <option value="SUECA RODAMON">SUECA RODAMON</option>
+                    <option value="SUECA 1 ">SUECA 1 </option>
+                    <option value="SUECA 13 - PABLO">SUECA 13 - PABLO</option>
+                    <option value="SUECA 2 ">SUECA 2 </option>
+                    <option value="SUECA 69 - HARALD">SUECA 69 - HARALD</option>
+                    <option value="TERUEL">TERUEL</option>
+                    <option value="TOMASOS">TOMASOS</option>
+                    <option value="TRINITARIOS 20 - ENRIQUE">TRINITARIOS 20 - ENRIQUE</option>
+                    <option value="TRINITARIOS 5 - BEN">TRINITARIOS 5 - BEN</option>
+                    <option value="TRIPLEX - BRUY - FAMILY">TRIPLEX - BRUY - FAMILY</option>
+                    <option value="VILLAHERMOSA ANA">VILLAHERMOSA ANA</option>
+                </select>
+
+                <label for="operario">Operario:</label>
+                <input type="text" id="operario" name="operario">
+
+                <label class="ns">Nivel de suciedad:</label>
+                <div class="form group-1 estrellas-rating">
+                    <span class="rating">
+                        <input type="radio" name="rating" id="estrella5" value="1"><label
+                            for="estrella5">&#9733;</label>
+                        <input type="radio" name="rating" id="estrella4" value="2"><label
+                            for="estrella4">&#9733;</label>
+                        <input type="radio" name="rating" id="estrella3" value="3"><label
+                            for="estrella3">&#9733;</label>
+                        <input type="radio" name="rating" id="estrella2" value="4"><label
+                            for="estrella2">&#9733;</label>
+                        <input type="radio" name="rating" id="estrella1" value="5"><label
+                            for="estrella1">&#9733;</label>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+
+        <form id="checklistForm">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="xx">PRODUCTO</th>
+                        <th class="xxx">Si</th>
+                        <th class="xxx">1</th>
+                        <th class="xxx">2</th>
+                        <th class="xxx">3</th>
+                        <th class="xxx">4</th>
+                        <th class="xxx">5</th>
+                        <th class="xxx">6</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="columna-2">Agua</td>
+                        <td class="columna-3 col-si"><input type="radio" name="q1" value="1"></td>
+                        <td class="columna-3"><input type="radio" name="q1" value="2"></td>
+                        <td class="columna-3"><input type="radio" name="q1" value="3"></td>
+                        <td class="columna-3"><input type="radio" name="q1" value="4"></td>
+                        <td class="columna-3"><input type="radio" name="q1" value="5"></td>
+                        <td class="columna-3"><input type="radio" name="q1" value="6"></td>
+                        <td class="columna-3"><input type="radio" name="q1" value="7"></td>
+                    </tr>
+                    <tr>
+                        <td class="columna-2">Aire acondicionado apagado</td>
+                        <td class="columna-3 col-si"><input type="radio" name="q2" value="1"></td>
+                        <td class="columna-3"><input type="radio" name="q2" value="2"></td>
+                        <td class="columna-3"><input type="radio" name="q2" value="3"></td>
+                        <td class="columna-3"><input type="radio" name="q2" value="4"></td>
+                        <td class="columna-3"><input type="radio" name="q2" value="5"></td>
+                        <td class="columna-3"><input type="radio" name="q2" value="6"></td>
+                        <td class="columna-3"><input type="radio" name="q2" value="7"></td>
+                    </tr>
+                    <tr>
+                        <td class="columna-2">Alfombrín</td>
+                        <td class="columna-3 col-si"><input type="radio" name="q3" value="1"></td>
+                        <td class="columna-3"><input type="radio" name="q3" value="2"></td>
+                        <td class="columna-3"><input type="radio" name="q3" value="3"></td>
+                        <td class="columna-3"><input type="radio" name="q3" value="4"></td>
+                        <td class="columna-3"><input type="radio" name="q3" value="5"></td>
+                        <td class="columna-3"><input type="radio" name="q3" value="6"></td>
+                        <td class="columna-3"><input type="radio" name="q3" value="7"></td>
+                    </tr>
+                    <tr>
+                        <td class="columna-2">Antical</td>
+                        <td class="columna-3 col-si"><input type="radio" name="q4" value="1"></td>
+                        <td class="columna-3"><input type="radio" name="q4" value="2"></td>
+                        <td class="columna-3"><input type="radio" name="q4" value="3"></td>
+                        <td class="columna-3"><input type="radio" name="q4" value="4"></td>
+                        <td class="columna-3"><input type="radio" name="q4" value="5"></td>
+                        <td class="columna-3"><input type="radio" name="q4" value="6"></td>
+                        <td class="columna-3"><input type="radio" name="q4" value="7"></td>
+                    </tr>
+                    <tr>
+                        <td class="columna-2">Bayetas</td>
+                        <td class="columna-3 col-si"><input type="radio" name="q5" value="1"></td>
+                        <td class="columna-3"><input type="radio" name="q5" value="2"></td>
+                        <td class="columna-3"><input type="radio" name="q5" value="3"></td>
+                        <td class="columna-3"><input type="radio" name="q5" value="4"></td>
+                        <td class="columna-3"><input type="radio" name="q5" value="5"></td>
+                        <td class="columna-3"><input type="radio" name="q5" value="6"></td>
+                        <td class="columna-3"><input type="radio" name="q5" value="7"></td>
+                    </tr>
+                    <tr>
+                        <td class="columna-2">Bolsa de basura grande</td>
+                        <td class="columna-3 col-si"><input type="radio" name="q6" value="1"></td>
+                        <td class="columna-3"><input type="radio" name="q6" value="2"></td>
+                        <td class="columna-3"><input type="radio" name="q6" value="3"></td>
+                        <td class="columna-3"><input type="radio" name="q6" value="4"></td>
+                        <td class="columna-3"><input type="radio" name="q6" value="5"></td>
+                        <td class="columna-3"><input type="radio" name="q6" value="6"></td>
+                        <td class="columna-3"><input type="radio" name="q6" value="7"></td>
+                    </tr>
+                    <tr>
+                        <td class="columna-2">Bolsa de basura pequeña</td>
+                        <td class="columna-3 col-si"><input type="radio" name="q7" value="1"></td>
+                        <td class="columna-3"><input type="radio" name="q7" value="2"></td>
+                        <td class="columna-3"><input type="radio" name="q7" value="3"></td>
+                        <td class="columna-3"><input type="radio" name="q7" value="4"></td>
+                        <td class="columna-3"><input type="radio" name="q7" value="5"></td>
+                        <td class="columna-3"><input type="radio" name="q7" value="6"></td>
+                        <td class="columna-3"><input type="radio" name="q7" value="7"></td>
+                    </tr>
+                    <tr>
+                        <td class="columna-2">Café</td>
+                        <td class="columna-3 col-si"><input type="radio" name="q8" value="1"></td>
+                        <td class="columna-3"><input type="radio" name="q8" value="2"></td>
+                        <td class="columna-3"><input type="radio" name="q8" value="3"></td>
+                        <td class="columna-3"><input type="radio" name="q8" value="4"></td>
+                        <td class="columna-3"><input type="radio" name="q8" value="5"></td>
+                        <td class="columna-3"><input type="radio" name="q8" value="6"></td>
+                        <td class="columna-3"><input type="radio" name="q8" value="7"></td>
+                    </tr>
+                    <tr>
+                        <td class="columna-2">Capsula lavadora</td>
+                        <td class="columna-3 col-si"><input type="radio" name="q9" value="1"></td>
+                        <td class="columna-3"><input type="radio" name="q9" value="2"></td>
+                        <td class="columna-3"><input type="radio" name="q9" value="3"></td>
+                        <td class="columna-3"><input type="radio" name="q9" value="4"></td>
+                        <td class="columna-3"><input type="radio" name="q9" value="5"></td>
+                        <td class="columna-3"><input type="radio" name="q9" value="6"></td>
+                        <td class="columna-3"><input type="radio" name="q9" value="7"></td>
+                    </tr>
+                    <tr>
+                        <td class="columna-2">Capsula lavavajillas</td>
+                        <td class="columna-3 col-si"><input type="radio" name="q10" value="1"></td>
+                        <td class="columna-3"><input type="radio" name="q10" value="2"></td>
+                        <td class="columna-3"><input type="radio" name="q10" value="3"></td>
+                        <td class="columna-3"><input type="radio" name="q10" value="4"></td>
+                        <td class="columna-3"><input type="radio" name="q10" value="5"></td>
+                        <td class="columna-3"><input type="radio" name="q10" value="6"></td>
+                        <td class="columna-3"><input type="radio" name="q10" value="7"></td>
+                    </tr>
+                    <tr>
+                        <td class="columna-2">Champú</td>
+                        <td class="columna-3 col-si"><input type="radio" name="q11" value="1"></td>
+                        <td class="columna-3"><input type="radio" name="q11" value="2"></td>
+                        <td class="columna-3"><input type="radio" name="q11" value="3"></td>
+                        <td class="columna-3"><input type="radio" name="q11" value="4"></td>
+                        <td class="columna-3"><input type="radio" name="q11" value="5"></td>
+                        <td class="columna-3"><input type="radio" name="q11" value="6"></td>
+                        <td class="columna-3"><input type="radio" name="q11" value="7"></td>
+                    </tr>
+                    <tr>
+                        <td class="columna-2">Colcha</td>
+                        <td class="columna-3 col-si"><input type="radio" name="q12" value="1"></td>
+                        <td class="columna-3"><input type="radio" name="q12" value="2"></td>
+                        <td class="columna-3"><input type="radio" name="q12" value="3"></td>
+                        <td class="columna-3"><input type="radio" name="q12" value="4"></td>
+                        <td class="columna-3"><input type="radio" name="q12" value="5"></td>
+                        <td class="columna-3"><input type="radio" name="q12" value="6"></td>
+                        <td class="columna-3"><input type="radio" name="q12" value="7"></td>
+                    </tr>
+                    <tr>
+                        <td class="columna-2">Escoba</td>
+                        <td class="columna-3 col-si"><input type="radio" name="q13" value="1"></td>
+                        <td class="columna-3"><input type="radio" name="q13" value="2"></td>
+                        <td class="columna-3"><input type="radio" name="q13" value="3"></td>
+                        <td class="columna-3"><input type="radio" name="q13" value="4"></td>
+                        <td class="columna-3"><input type="radio" name="q13" value="5"></td>
+                        <td class="columna-3"><input type="radio" name="q13" value="6"></td>
+                        <td class="columna-3"><input type="radio" name="q13" value="7"></td>
+                    </tr>
+                    <tr>
+                        <td class="columna-2">Palo escoba</td>
+                        <td class="columna-3 col-si"><input type="radio" name="q14" value="1"></td>
+                        <td class="columna-3"><input type="radio" name="q14" value="2"></td>
+                        <td class="columna-3"><input type="radio" name="q14" value="3"></td>
+                        <td class="columna-3"><input type="radio" name="q14" value="4"></td>
+                        <td class="columna-3"><input type="radio" name="q14" value="5"></td>
+                        <td class="columna-3"><input type="radio" name="q14" value="6"></td>
+                        <td class="columna-3"><input type="radio" name="q14" value="7"></td>
+                    </tr>
+                    <tr>
+                        <td class="columna-2">Estropajo</td>
+                        <td class="columna-3 col-si"><input type="radio" name="q15" value="1"></td>
+                        <td class="columna-3"><input type="radio" name="q15" value="2"></td>
+                        <td class="columna-3"><input type="radio" name="q15" value="3"></td>
+                        <td class="columna-3"><input type="radio" name="q15" value="4"></td>
+                        <td class="columna-3"><input type="radio" name="q15" value="5"></td>
+                        <td class="columna-3"><input type="radio" name="q15" value="6"></td>
+                        <td class="columna-3"><input type="radio" name="q15" value="7"></td>
+                    </tr>
+                    <tr>
+                        <td class="columna-2">Friegasuelos</td>
+                        <td class="columna-3 col-si"><input type="radio" name="q16" value="1"></td>
+                        <td class="columna-3"><input type="radio" name="q16" value="2"></td>
+                        <td class="columna-3"><input type="radio" name="q16" value="3"></td>
+                        <td class="columna-3"><input type="radio" name="q16" value="4"></td>
+                        <td class="columna-3"><input type="radio" name="q16" value="5"></td>
+                        <td class="columna-3"><input type="radio" name="q16" value="6"></td>
+                        <td class="columna-3"><input type="radio" name="q16" value="7"></td>
+                    </tr>
+                    <tr>
+                        <td class="columna-2">Gel de ducha</td>
+                        <td class="columna-3 col-si"><input type="radio" name="q17" value="1"></td>
+                        <td class="columna-3"><input type="radio" name="q17" value="2"></td>
+                        <td class="columna-3"><input type="radio" name="q17" value="3"></td>
+                        <td class="columna-3"><input type="radio" name="q17" value="4"></td>
+                        <td class="columna-3"><input type="radio" name="q17" value="5"></td>
+                        <td class="columna-3"><input type="radio" name="q17" value="6"></td>
+                        <td class="columna-3"><input type="radio" name="q17" value="7"></td>
+                    </tr>
+                    <tr>
+                        <td class="columna-2">Gel limpia baños</td>
+                        <td class="columna-3 col-si"><input type="radio" name="q18" value="1"></td>
+                        <td class="columna-3"><input type="radio" name="q18" value="2"></td>
+                        <td class="columna-3"><input type="radio" name="q18" value="3"></td>
+                        <td class="columna-3"><input type="radio" name="q18" value="4"></td>
+                        <td class="columna-3"><input type="radio" name="q18" value="5"></td>
+                        <td class="columna-3"><input type="radio" name="q18" value="6"></td>
+                        <td class="columna-3"><input type="radio" name="q18" value="7"></td>
+                    </tr>
+                    <tr>
+                        <td class="columna-2">Jabón de manos</td>
+                        <td class="columna-3 col-si"><input type="radio" name="q19" value="1"></td>
+                        <td class="columna-3"><input type="radio" name="q19" value="2"></td>
+                        <td class="columna-3"><input type="radio" name="q19" value="3"></td>
+                        <td class="columna-3"><input type="radio" name="q19" value="4"></td>
+                        <td class="columna-3"><input type="radio" name="q19" value="5"></td>
+                        <td class="columna-3"><input type="radio" name="q19" value="6"></td>
+                        <td class="columna-3"><input type="radio" name="q19" value="7"></td>
+                    </tr>
+                    <tr>
+                        <td class="columna-2">Lavavajillas liquido</td>
+                        <td class="columna-3 col-si"><input type="radio" name="q20" value="1"></td>
+                        <td class="columna-3"><input type="radio" name="q20" value="2"></td>
+                        <td class="columna-3"><input type="radio" name="q20" value="3"></td>
+                        <td class="columna-3"><input type="radio" name="q20" value="4"></td>
+                        <td class="columna-3"><input type="radio" name="q20" value="5"></td>
+                        <td class="columna-3"><input type="radio" name="q20" value="6"></td>
+                        <td class="columna-3"><input type="radio" name="q20" value="7"></td>
+                    </tr>
+                    <tr>
+                        <td class="columna-2">Lejía</td>
+                        <td class="columna-3 col-si"><input type="radio" name="q21" value="1"></td>
+                        <td class="columna-3"><input type="radio" name="q21" value="2"></td>
+                        <td class="columna-3"><input type="radio" name="q21" value="3"></td>
+                        <td class="columna-3"><input type="radio" name="q21" value="4"></td>
+                        <td class="columna-3"><input type="radio" name="q21" value="5"></td>
+                        <td class="columna-3"><input type="radio" name="q21" value="6"></td>
+                        <td class="columna-3"><input type="radio" name="q21" value="7"></td>
+                    </tr>
+                    <tr>
+                        <td class="columna-2">Limpiacristales</td>
+                        <td class="columna-3 col-si"><input type="radio" name="q22" value="1"></td>
+                        <td class="columna-3"><input type="radio" name="q22" value="2"></td>
+                        <td class="columna-3"><input type="radio" name="q22" value="3"></td>
+                        <td class="columna-3"><input type="radio" name="q22" value="4"></td>
+                        <td class="columna-3"><input type="radio" name="q22" value="5"></td>
+                        <td class="columna-3"><input type="radio" name="q22" value="6"></td>
+                        <td class="columna-3"><input type="radio" name="q22" value="7"></td>
+                    </tr>
+                    <tr>
+                        <td class="columna-2">Limpia muebles</td>
+                        <td class="columna-3 col-si"><input type="radio" name="q23" value="1"></td>
+                        <td class="columna-3"><input type="radio" name="q23" value="2"></td>
+                        <td class="columna-3"><input type="radio" name="q23" value="3"></td>
+                        <td class="columna-3"><input type="radio" name="q23" value="4"></td>
+                        <td class="columna-3"><input type="radio" name="q23" value="5"></td>
+                        <td class="columna-3"><input type="radio" name="q23" value="6"></td>
+                        <td class="columna-3"><input type="radio" name="q23" value="7"></td>
+                    </tr>
+                    <tr>
+                        <td class="columna-2">Llave de huéspedes</td>
+                        <td class="columna-3 col-si"><input type="radio" name="q24" value="1"></td>
+                        <td class="columna-3"><input type="radio" name="q24" value="2"></td>
+                        <td class="columna-3"><input type="radio" name="q24" value="3"></td>
+                        <td class="columna-3"><input type="radio" name="q24" value="4"></td>
+                        <td class="columna-3"><input type="radio" name="q24" value="5"></td>
+                        <td class="columna-3"><input type="radio" name="q24" value="6"></td>
+                        <td class="columna-3"><input type="radio" name="q24" value="7"></td>
+                    </tr>
+                    <tr>
+                        <td class="columna-2">Luces apagadas</td>
+                        <td class="columna-3 col-si"><input type="radio" name="q25" value="1"></td>
+                        <td class="columna-3"><input type="radio" name="q25" value="2"></td>
+                        <td class="columna-3"><input type="radio" name="q25" value="3"></td>
+                        <td class="columna-3"><input type="radio" name="q25" value="4"></td>
+                        <td class="columna-3"><input type="radio" name="q25" value="5"></td>
+                        <td class="columna-3"><input type="radio" name="q25" value="6"></td>
+                        <td class="columna-3"><input type="radio" name="q25" value="7"></td>
+                    </tr>
+                    <tr>
+                        <td class="columna-2">Mocho / Fregona</td>
+                        <td class="columna-3 col-si"><input type="radio" name="q26" value="1"></td>
+                        <td class="columna-3"><input type="radio" name="q26" value="2"></td>
+                        <td class="columna-3"><input type="radio" name="q26" value="3"></td>
+                        <td class="columna-3"><input type="radio" name="q26" value="4"></td>
+                        <td class="columna-3"><input type="radio" name="q26" value="5"></td>
+                        <td class="columna-3"><input type="radio" name="q26" value="6"></td>
+                        <td class="columna-3"><input type="radio" name="q26" value="7"></td>
+                    </tr>
+                    <tr>
+                        <td class="columna-2">Palo mocho / fregona</td>
+                        <td class="columna-3 col-si"><input type="radio" name="q27" value="1"></td>
+                        <td class="columna-3"><input type="radio" name="q27" value="2"></td>
+                        <td class="columna-3"><input type="radio" name="q27" value="3"></td>
+                        <td class="columna-3"><input type="radio" name="q27" value="4"></td>
+                        <td class="columna-3"><input type="radio" name="q27" value="5"></td>
+                        <td class="columna-3"><input type="radio" name="q27" value="6"></td>
+                        <td class="columna-3"><input type="radio" name="q27" value="7"></td>
+                    </tr>
+                    <tr>
+                        <td class="columna-2">Papel de cocina</td>
+                        <td class="columna-3 col-si"><input type="radio" name="q28" value="1"></td>
+                        <td class="columna-3"><input type="radio" name="q28" value="2"></td>
+                        <td class="columna-3"><input type="radio" name="q28" value="3"></td>
+                        <td class="columna-3"><input type="radio" name="q28" value="4"></td>
+                        <td class="columna-3"><input type="radio" name="q28" value="5"></td>
+                        <td class="columna-3"><input type="radio" name="q28" value="6"></td>
+                        <td class="columna-3"><input type="radio" name="q28" value="7"></td>
+                    </tr>
+                    <tr>
+                        <td class="columna-2">Papel higiénico</td>
+                        <td class="columna-3 col-si"><input type="radio" name="q29" value="1"></td>
+                        <td class="columna-3"><input type="radio" name="q29" value="2"></td>
+                        <td class="columna-3"><input type="radio" name="q29" value="3"></td>
+                        <td class="columna-3"><input type="radio" name="q29" value="4"></td>
+                        <td class="columna-3"><input type="radio" name="q29" value="5"></td>
+                        <td class="columna-3"><input type="radio" name="q29" value="6"></td>
+                        <td class="columna-3"><input type="radio" name="q29" value="7"></td>
+                    </tr>
+                    <tr>
+                        <td class="columna-2">Quita grasa</td>
+                        <td class="columna-3 col-si"><input type="radio" name="q30" value="1"></td>
+                        <td class="columna-3"><input type="radio" name="q30" value="2"></td>
+                        <td class="columna-3"><input type="radio" name="q30" value="3"></td>
+                        <td class="columna-3"><input type="radio" name="q30" value="4"></td>
+                        <td class="columna-3"><input type="radio" name="q30" value="5"></td>
+                        <td class="columna-3"><input type="radio" name="q30" value="6"></td>
+                        <td class="columna-3"><input type="radio" name="q30" value="7"></td>
+                    </tr>
+                    <tr>
+                        <td class="columna-2">Recogedor de basura</td>
+                        <td class="columna-3 col-si"><input type="radio" name="q31" value="1"></td>
+                        <td class="columna-3"><input type="radio" name="q31" value="2"></td>
+                        <td class="columna-3"><input type="radio" name="q31" value="3"></td>
+                        <td class="columna-3"><input type="radio" name="q31" value="4"></td>
+                        <td class="columna-3"><input type="radio" name="q31" value="5"></td>
+                        <td class="columna-3"><input type="radio" name="q31" value="6"></td>
+                        <td class="columna-3"><input type="radio" name="q31" value="7"></td>
+                    </tr>
+                    <tr>
+                        <td class="columna-2">Palo recogedor</td>
+                        <td class="columna-3 col-si"><input type="radio" name="q32" value="1"></td>
+                        <td class="columna-3"><input type="radio" name="q32" value="2"></td>
+                        <td class="columna-3"><input type="radio" name="q32" value="3"></td>
+                        <td class="columna-3"><input type="radio" name="q32" value="4"></td>
+                        <td class="columna-3"><input type="radio" name="q32" value="5"></td>
+                        <td class="columna-3"><input type="radio" name="q32" value="6"></td>
+                        <td class="columna-3"><input type="radio" name="q32" value="7"></td>
+                    </tr>
+                    <tr>
+                        <td class="columna-2">Sal lavavajillas</td>
+                        <td class="columna-3 col-si"><input type="radio" name="q33" value="1"></td>
+                        <td class="columna-3"><input type="radio" name="q33" value="2"></td>
+                        <td class="columna-3"><input type="radio" name="q33" value="3"></td>
+                        <td class="columna-3"><input type="radio" name="q33" value="4"></td>
+                        <td class="columna-3"><input type="radio" name="q33" value="5"></td>
+                        <td class="columna-3"><input type="radio" name="q33" value="6"></td>
+                        <td class="columna-3"><input type="radio" name="q33" value="7"></td>
+                    </tr>
+                    <tr>
+                        <td class="columna-2">Vinagre de limpieza</td>
+                        <td class="columna-3 col-si"><input type="radio" name="q34" value="1"></td>
+                        <td class="columna-3"><input type="radio" name="q34" value="2"></td>
+                        <td class="columna-3"><input type="radio" name="q34" value="3"></td>
+                        <td class="columna-3"><input type="radio" name="q34" value="4"></td>
+                        <td class="columna-3"><input type="radio" name="q34" value="5"></td>
+                        <td class="columna-3"><input type="radio" name="q34" value="6"></td>
+                        <td class="columna-3"><input type="radio" name="q34" value="7"></td>
+                    </tr>
+                    <tr>
+                        <td class="columna-2">Vino</td>
+                        <td class="columna-3 col-si"><input type="radio" name="q35" value="1"></td>
+                        <td class="columna-3"><input type="radio" name="q35" value="2"></td>
+                        <td class="columna-3"><input type="radio" name="q35" value="3"></td>
+                        <td class="columna-3"><input type="radio" name="q35" value="4"></td>
+                        <td class="columna-3"><input type="radio" name="q35" value="5"></td>
+                        <td class="columna-3"><input type="radio" name="q35" value="6"></td>
+                        <td class="columna-3"><input type="radio" name="q35" value="7"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+        <div class="observaciones">
+            <label>Observaciones:</label>
+        </div>
+        <div class="form-group-3">
+            <div>
+                <textarea id="observaciones" name="observaciones" rows="10"></textarea>
+            </div>
+        </div>
+        <div class="button">
+            <button type="button" onclick="shareOnWhatsApp()">Compartir reporte</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
