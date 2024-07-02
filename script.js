@@ -116,22 +116,22 @@ function shareOnWhatsApp() {
     const formattedDateTime = now.toLocaleDateString() + ' ' + now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
     // Formatea la fecha y hora en una cadena
 
-    const operario = document.getElementById('operario').value;
-    // Obtiene el valor del input con id 'operario'
+    const operario = document.getElementById('operario').value.toUpperCase();
+    // Obtiene el valor del input con id 'operario' y lo convierte a mayúsculas
 
-    const apartamento = document.getElementById('apartamento').value;
-    // Obtiene el valor del input con id 'apartamento'
+    const apartamento = document.getElementById('apartamento').value.toUpperCase();
+    // Obtiene el valor del input con id 'apartamento' y lo convierte a mayúsculas
 
-    const estrellas = document.querySelector('input[name="rating"]:checked') ? document.querySelector('input[name="rating"]:checked').value : 'No';
-    // Obtiene el valor del input seleccionado con el nombre 'rating', o 'No' si no hay ninguno seleccionado
+    const estrellas = document.querySelector('input[name="rating"]:checked') ? document.querySelector('input[name="rating"]:checked').value.toUpperCase() : 'NO';
+    // Obtiene el valor del input seleccionado con el nombre 'rating', lo convierte a mayúsculas, o 'NO' si no hay ninguno seleccionado
 
-    const observaciones = document.getElementById('observaciones').value;
-    // Obtiene el valor del textarea con id 'observaciones'
+    const observaciones = document.getElementById('observaciones').value.toUpperCase();
+    // Obtiene el valor del textarea con id 'observaciones' y lo convierte a mayúsculas
 
-    const titulo = document.querySelector('h2').textContent;
-    // Obtiene el texto del primer elemento h2
+    const titulo = document.querySelector('h2').textContent.toUpperCase();
+    // Obtiene el texto del primer elemento h2 y lo convierte a mayúsculas
 
-    let textContent = `${titulo}\n${formattedDateTime}\nOperario: ${operario}\nApartamento: ${apartamento}\nNivel de suciedad: ${estrellas}\n\nProductos:\n`;
+    let textContent = `${titulo}\n${formattedDateTime}\nOPERARIO: ${operario}\nAPARTAMENTO: ${apartamento}\nNIVEL DE SUCIEDAD: ${estrellas}\n\nPRODUCTOS:\n`;
     // Crea una cadena de texto con el título, la fecha y hora, el operario, el apartamento y el nivel de suciedad
 
     const rows = document.querySelectorAll('tbody tr');
@@ -140,27 +140,27 @@ function shareOnWhatsApp() {
     rows.forEach(row => {
         // Itera sobre cada fila
 
-        const product = row.querySelector('td:first-child').textContent;
-        // Obtiene el texto del primer td de la fila (el nombre del producto)
+        const product = row.querySelector('td:first-child').textContent.toUpperCase();
+        // Obtiene el texto del primer td de la fila (el nombre del producto) y lo convierte a mayúsculas
 
         const checkedField = row.querySelector('input[type="radio"]:checked');
         // Selecciona el input de tipo radio seleccionado en la fila
 
-        let value = 'No';
-        // Inicializa el valor como 'No'
+        let value = 'NO';
+        // Inicializa el valor como 'NO'
 
         if (checkedField) {
             // Si hay un input de tipo radio seleccionado
 
-            value = checkedField.closest('table').querySelector(`th:nth-child(${checkedField.parentElement.cellIndex + 1})`).textContent;
-            // Obtiene el texto del encabezado de la columna correspondiente al input seleccionado
+            value = checkedField.closest('table').querySelector(`th:nth-child(${checkedField.parentElement.cellIndex + 1})`).textContent.toUpperCase();
+            // Obtiene el texto del encabezado de la columna correspondiente al input seleccionado y lo convierte a mayúsculas
         }
 
         textContent += `${product}: ${value}\n`;
         // Añade el producto y su valor a la cadena de texto
     });
 
-    textContent += `\nObservaciones:\n${observaciones}`;
+    textContent += `\nOBSERVACIONES:\n${observaciones}`;
     // Añade las observaciones a la cadena de texto
 
     const encodedText = encodeURIComponent(textContent);
